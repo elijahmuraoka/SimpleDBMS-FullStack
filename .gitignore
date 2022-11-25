@@ -1,0 +1,3 @@
+*.iml
+.DS_Store
+server/node_modules/

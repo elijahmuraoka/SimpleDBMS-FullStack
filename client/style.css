@@ -1,0 +1,212 @@
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+}
+
+body {
+    margin-top: 40px;
+    background: linear-gradient(to bottom, rgb(230, 230, 250), white) fixed;
+    margin: auto;
+}
+
+/* @media (min-width: 1000px) {
+    body {
+        margin: auto;
+        max-width: 1300px;
+    }
+    * {
+        font-size: 2vw;
+    }
+    #main-title {
+        font-size: 3vw;
+    }
+} */
+
+button {
+    background-color: white;
+    padding: 3px 8px;
+    border: solid #000000bf;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: rgb(160, 255, 170);
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.delete: hover {
+    background-color: rgb(255, 40, 40);
+}
+
+input {
+    padding-block: 5px;
+    border-radius: 25px;
+    border: solid rgba(0, 0, 0, 0.75);
+}
+
+input:hover {
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#title-container {
+    background: linear-gradient(
+        to bottom,
+        rgb(180, 180, 250),
+        rgb(200, 200, 240)
+    );
+    border-bottom: solid white 2px;
+}
+
+#main-title {
+    margin: auto;
+    padding-block: 3vh;
+    max-width: 70%;
+    font-size: 7vw;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#add-user-form {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 6vw 6vw;
+}
+
+#name-input {
+    /* TODO: FILL IN */
+}
+
+#add-name-button {
+    /* TODO: FILL IN */
+}
+
+#add-name-error {
+    /* TODO: FILL IN */
+}
+
+#search-form {
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5vh;
+}
+
+#search-input {
+    /* TODO: FILL IN */
+}
+
+#search-button {
+    /* TODO: FILL IN */
+}
+
+#people-table {
+    margin: auto;
+    background: lightgoldenrodyellow;
+    border-collapse: collapse;
+}
+
+#people-table th {
+    border: 2px black solid;
+    padding: 1vh 2.5vw;
+}
+
+#people-table-body {
+    /* TODO: FILL IN */
+}
+
+#no-data {
+    border: 2px black solid;
+}
+
+#no-data > td {
+    background: lightcoral;
+}
+
+.user-data {
+    background: lightcyan;
+}
+
+.user-data > td {
+    border: 2px black solid;
+    padding: 9px 7px;
+    text-align: center;
+}
+
+#popup-title {
+    background-color: rgb(0, 235, 255);
+    padding: 1vh 0vw 1vh 0vw;
+    margin-bottom: 2vh;
+    border: solid white 2px;
+    border-radius: 1vw;
+    font-size: 5vw;
+    max-width: 75%;
+}
+
+.popup {
+    transform: translate(-50%, -50%) scale(0);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    padding: 2vh 3vw;
+    background-color: aquamarine;
+    z-index: 10;
+    border: solid black 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 200ms;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    scale: 1;
+    transition: ease-in-out 200ms;
+}
+
+.close-button {
+    margin: auto;
+    padding: 0.5vw 2vw 1vw 2vw;
+    position: absolute;
+    left: 93%;
+    bottom: 92%;
+    background-color: rgb(255, 100, 100);
+    border: solid black 2px;
+    border-radius: 4vw;
+}
+
+.close-button:hover {
+    background-color: rgb(255, 40, 40);
+}
+
+#edit-input {
+    width: 75%;
+    margin-bottom: 3vh;
+}
+
+#edit-button {
+    width: 50%;
+}
